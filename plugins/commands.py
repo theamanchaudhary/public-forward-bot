@@ -14,8 +14,8 @@ buttons=InlineKeyboardMarkup(
                 InlineKeyboardButton("How Does This Works?", callback_data="abt")
             ],
             [
-                InlineKeyboardButton("Source Code", url="https://github.com/Greymattersbot/public-forward-bot"),
-                InlineKeyboardButton("Updates Channel", url="https://t.me/greymatter_bots")
+                InlineKeyboardButton("Source Code", url="https://t.me/+nHs9zc-SB49jODE9"),
+                InlineKeyboardButton("Updates Channel", url="https://t.me/Matiz_Techz")
             ]
         ]
         )
@@ -60,11 +60,11 @@ async def cb_help(bot, cb):
 
 @Client.on_callback_query(filters.regex(r'^abt$'))   
 async def cb_abt(bot, cb):
-    await cb.message.edit_text("Talking is cheap, Read Code.",
+    await cb.message.edit_text("Talking is cheap, Click On Help Button.",
     reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("Source", url="https://github.com/Greymattersbot/public-forward-bot"),
+                InlineKeyboardButton("Source", url="https://t.me/+nHs9zc-SB49jODE9"),
             ]
         ]
     )
